@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		408E2D2B5040394FE4860456 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		420474F418DC299500E88E07 /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpClient.h; sourceTree = "<group>"; };
 		420474F518DC299500E88E07 /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpClient.m; sourceTree = "<group>"; };
 		420474F818DC2B2100E88E07 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -57,8 +58,8 @@
 		42FD6C6B18DC286B000BF2B9 /* YelpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpTests-Info.plist"; sourceTree = "<group>"; };
 		42FD6C6D18DC286B000BF2B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42FD6C6F18DC286B000BF2B9 /* YelpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpTests.m; sourceTree = "<group>"; };
-		8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9DEC6D18C14F46F8AF2EA320 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B93EF00B2989D46AA31C96 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +113,7 @@
 				42FD6C6918DC286B000BF2B9 /* YelpTests */,
 				42FD6C4918DC286B000BF2B9 /* Frameworks */,
 				42FD6C4818DC286B000BF2B9 /* Products */,
-				8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */,
+				E137CFDC2BAD8C2CDC77E553 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +178,15 @@
 				42FD6C6C18DC286B000BF2B9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E137CFDC2BAD8C2CDC77E553 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8B93EF00B2989D46AA31C96 /* Pods.debug.xcconfig */,
+				408E2D2B5040394FE4860456 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,7 +437,7 @@
 		};
 		42FD6C7418DC286B000BF2B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */;
+			baseConfigurationReference = B8B93EF00B2989D46AA31C96 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,7 +451,7 @@
 		};
 		42FD6C7518DC286B000BF2B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */;
+			baseConfigurationReference = 408E2D2B5040394FE4860456 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
