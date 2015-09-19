@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersViewController">
             <connections>
-                <outlet property="tableView" destination="0Ft-Ma-PZB" id="YFy-hc-iPf"/>
+                <outlet property="tableView" destination="TtS-Cj-hp7" id="x8d-TP-thJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,13 +15,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ft-Ma-PZB">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TtS-Cj-hp7">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="175" y="410"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TtS-Cj-hp7" secondAttribute="trailing" id="H7q-3v-GFH"/>
+                <constraint firstAttribute="bottom" secondItem="TtS-Cj-hp7" secondAttribute="bottom" id="T2w-GI-zrO"/>
+                <constraint firstItem="TtS-Cj-hp7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ovV-Dy-JZ5"/>
+                <constraint firstItem="TtS-Cj-hp7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tyo-tK-Hap"/>
+            </constraints>
         </view>
     </objects>
 </document>
