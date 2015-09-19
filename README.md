@@ -31,4 +31,4 @@ Time spent: `<Number of hours spent>`
 
 ### Walkthrough
 
-![Video Walkthrough]((https://raw.github.com/mikewu-x2/ios_yelp/master/gif/recording.gif)
+![Video Walkthrough](https://raw.github.com/mikewu-x2/ios_yelp/master/gif/recording.gif)
